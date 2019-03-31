@@ -1,0 +1,81 @@
+/* 公共类： */
+
+
+/* 样式初始化*/
+
+html,
+body,
+div,
+p,
+a,
+img,
+form,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: #fff;
+}
+
+body {
+    font-size: 13px;
+    font-family: "微软雅黑", "全新硬笔行书楷";
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+a,
+a:hover {
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* 添加公共样式 */
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.m_top10 {
+    margin-top: 10px;
+}
+
+.m_left10 {
+    margin-left: 10px;
+}
+
+.m_right10 {
+    margin-right: 10px;
+}
+
+.clearFix::before,
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}

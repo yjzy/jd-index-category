@@ -1,0 +1,269 @@
+.layout {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+.jd_search {
+    width: 100%;
+    max-width: 640px;
+    height: 40px;
+    position: fixed;
+    z-index: 99999;
+}
+
+.jd_logo {
+    width: 56px;
+    height: 30px;
+    background: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: 0px -108px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.jd_login {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.searchBox {
+    width: 100%;
+    height: 100%;
+    padding-left: 76px;
+    padding-right: 50px;
+}
+
+.searchBox>input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    color: #666;
+    border-radius: 15px;
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.searchBox::before {
+    content: "";
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    background: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -56px -108px;
+    top: 9px;
+    left: 80px;
+}
+
+
+/* 轮播图区域 */
+
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jd_bannerImg {
+    width: 800%;
+}
+
+.jd_bannerImg li {
+    width: 12.5%;
+    float: left;
+}
+
+.jd_bannerImg li img {
+    width: 100%;
+    /* 基线对齐：
+    1.设置为块级元素
+    2.将文本字体大小设为0
+    3.vertical-align:bottom; */
+    display: block;
+}
+
+.jd_bannerIndicator {
+    width: 128px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    transform: translate(-50%);
+}
+
+.jd_bannerIndicator li {
+    border: 1px solid #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+
+.jd_bannerIndicator>li:nth-of-type {
+    margin-left: 0px;
+}
+
+.jd_bannerIndicator>li.active {
+    background-color: #fff;
+}
+
+
+/* 导航区 */
+
+.jd_nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.jd_nav li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.jd_nav li img {
+    width: 40px;
+}
+
+.jd_nav li p {
+    line-height: 25px;
+}
+
+
+/* 产品信息部分 */
+
+.jd_product {
+    width: 100%;
+}
+
+.jd_productBox {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.jd_productBox>.jd_pTip {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    padding-left: 30px;
+}
+
+.jd_productBox>.jd_pTip>h3 {
+    position: relative;
+}
+
+.jd_productBox>.jd_pTip>h3::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background-color: red;
+    top: 9px;
+    left: -8px;
+}
+
+.a_50 {
+    width: 50%;
+    display: block;
+}
+
+.a_50>img {
+    width: 100%;
+    display: block;
+}
+
+.b_left {
+    border-left: 1px solid #ccc;
+}
+
+.b_right {
+    border-right: 1px solid #ccc;
+}
+
+.b_bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* 秒杀区 */
+
+.jd_sk>.jd_pTip {
+    border-bottom: none;
+}
+
+.jd_sk .jd_pTip .jd_sk_icon {
+    width: 16px;
+    height: 20px;
+    background: url(../uploads/seckill-icon.png);
+    background-size: 16px 20px;
+    margin-top: 3px;
+}
+
+.jd_sk .jd_pTip .jd_sk_text {
+    color: red;
+}
+
+.jd_sk .jd_pTip .jd_sk_time span {
+    width: 13px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+}
+
+.jd_sk .jd_pTip .jd_sk_time span:nth-of-type(3) {
+    background-color: #fff;
+    color: black;
+    width: 6px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.jd_sk .jd_pTip .jd_sk_time span:nth-of-type(6) {
+    background-color: #fff;
+    color: black;
+    width: 6px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.jd_sk>.jd_pTip {
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+
+.jd_sk .jd_pContent {
+    padding: 20px;
+}
+
+.jd_sk .jd_pContent ul {
+    width: 100%;
+}
+
+.jd_sk .jd_pContent ul li {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.jd_sk .jd_pContent ul li img {
+    width: 60%;
+}
